@@ -720,6 +720,14 @@ html, body {
 .lens-beauvoir { background: rgba(233, 30, 99, 0.1); border-color: rgba(233, 30, 99, 0.3); color: var(--accent-beauvoir); }
 .lens-adorno { background: rgba(96, 125, 139, 0.1); border-color: rgba(96, 125, 139, 0.3); color: var(--accent-adorno); }
 .lens-butler { background: rgba(156, 39, 176, 0.1); border-color: rgba(156, 39, 176, 0.3); color: var(--accent-butler); }
+.lens-hegel { background: rgba(76, 175, 80, 0.1); border-color: rgba(76, 175, 80, 0.3); color: #4CAF50; }
+.lens-deleuze { background: rgba(156, 39, 176, 0.1); border-color: rgba(156, 39, 176, 0.3); color: #9C27B0; }
+.lens-derrida { background: rgba(3, 169, 244, 0.1); border-color: rgba(3, 169, 244, 0.3); color: #03A9F4; }
+.lens-haraway { background: rgba(255, 87, 34, 0.1); border-color: rgba(255, 87, 34, 0.3); color: #FF5722; }
+.lens-said { background: rgba(0, 150, 136, 0.1); border-color: rgba(0, 150, 136, 0.3); color: #009688; }
+.lens-sartre { background: rgba(103, 58, 183, 0.1); border-color: rgba(103, 58, 183, 0.3); color: #673AB7; }
+.lens-bergson { background: rgba(121, 85, 72, 0.1); border-color: rgba(121, 85, 72, 0.3); color: #795548; }
+
 
 /* ====== CRITICS PAGE ====== */
 .critics-header {
