@@ -185,7 +185,7 @@ html, body {
     top: 0;
 }
 
-/* ====== HEADER - NOT STICKY ====== */
+/* ====== HEADER ====== */
 .site-header {
     position: relative;
     height: var(--header-height);
@@ -505,6 +505,20 @@ html, body {
 .review-content li strong {
     color: var(--accent-mbembe);
 }
+
+/* ====== CRITICS PAGE SECTIONS ====== */
+.critics-section {
+    margin-bottom: 4rem;
+}
+
+.section-title {
+    font-size: 2rem;
+    color: var(--accent-nietzsche);
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid rgba(156, 39, 176, 0.3);
+    text-align: left;
+    }
 
 /* ====== THINKER TAG ====== */
 .thinker-tag {
