@@ -16,7 +16,13 @@
     --accent-beauvoir: #e91e63;     /* Pink for de Beauvoir */
     --accent-adorno: #607d8b;       /* Grey for Adorno */
     --accent-butler: #9c27b0;       /* Purple for Butler */
-    
+    --accent-spillers: #8BC34A;      /* Light green for Spillers */
+    --accent-morrison: #9C27B0;      /* Purple for Morrison */
+    --accent-du-bois: #2196F3;       /* Blue for Du Bois */
+    --accent-hooks: #E91E63;         /* Pink for hooks */
+    --accent-west: #FF9800;          /* Orange for West */
+    --accent-baldwin: #795548;       /* Brown for Baldwin */
+    --accent-davis: #F44336;         /* Red for Davis */
     /* Text colors */
     --text-primary: #f0f0f0;
     --text-secondary: #b0b0b0;
@@ -727,7 +733,13 @@ html, body {
 .lens-said { background: rgba(0, 150, 136, 0.1); border-color: rgba(0, 150, 136, 0.3); color: #009688; }
 .lens-sartre { background: rgba(103, 58, 183, 0.1); border-color: rgba(103, 58, 183, 0.3); color: #673AB7; }
 .lens-bergson { background: rgba(121, 85, 72, 0.1); border-color: rgba(121, 85, 72, 0.3); color: #795548; }
-
+.lens-spillers { background: rgba(139, 195, 74, 0.1); border-color: rgba(139, 195, 74, 0.3); color: var(--accent-spillers); }
+.lens-morrison { background: rgba(156, 39, 176, 0.1); border-color: rgba(156, 39, 176, 0.3); color: var(--accent-morrison); }
+.lens-du-bois { background: rgba(33, 150, 243, 0.1); border-color: rgba(33, 150, 243, 0.3); color: var(--accent-du-bois); }
+.lens-hooks { background: rgba(233, 30, 99, 0.1); border-color: rgba(233, 30, 99, 0.3); color: var(--accent-hooks); }
+.lens-west { background: rgba(255, 152, 0, 0.1); border-color: rgba(255, 152, 0, 0.3); color: var(--accent-west); }
+.lens-baldwin { background: rgba(121, 85, 72, 0.1); border-color: rgba(121, 85, 72, 0.3); color: var(--accent-baldwin); }
+.lens-davis { background: rgba(244, 67, 54, 0.1); border-color: rgba(244, 67, 54, 0.3); color: var(--accent-davis); }
 
 /* ====== CRITICS PAGE ====== */
 .critics-header {
