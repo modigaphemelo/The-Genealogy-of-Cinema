@@ -16,25 +16,71 @@
     --accent-beauvoir: #e91e63;     /* Pink for de Beauvoir */
     --accent-adorno: #607d8b;       /* Grey for Adorno */
     --accent-butler: #9c27b0;       /* Purple for Butler */
-    --accent-spillers: #8BC34A;      /* Light green for Spillers */
-    --accent-morrison: #9C27B0;      /* Purple for Morrison */
-    --accent-du-bois: #2196F3;       /* Blue for Du Bois */
-    --accent-hooks: #E91E63;         /* Pink for hooks */
-    --accent-west: #FF9800;          /* Orange for West */
-    --accent-baldwin: #795548;       /* Brown for Baldwin */
-    --accent-davis: #F44336;         /* Red for Davis */
-    --accent-bataille: #FF5722;       /* Deep orange for Bataille */
-    --accent-mulvey: #9C27B0;         /* Purple for Mulvey */
-    --accent-clover: #3F51B5;         /* Indigo for Clover */
-    --accent-kristeva: #009688;       /* Teal for Kristeva */
-    --accent-girard: #795548;         /* Brown for Girard */
-    --accent-sade: #F44336;           /* Red for Sade */
-    --accent-williams: #2196F3;       /* Blue for Williams */
-    --accent-jodorowsky: #FF9800;     /* Orange for Jodorowsky */
-   --accent-hartman: #00BCD4;
-   --accent-brass: #E91E63;
-   --accent-davis: #F44336;
- 
+    --accent-spillers: #8BC34A;     /* Light green for Spillers */
+    --accent-morrison: #9C27B0;     /* Purple for Morrison */
+    --accent-du-bois: #2196F3;      /* Blue for Du Bois */
+    --accent-hooks: #E91E63;        /* Pink for hooks */
+    --accent-west: #FF9800;         /* Orange for West */
+    --accent-baldwin: #795548;      /* Brown for Baldwin */
+    --accent-davis: #F44336;        /* Red for Davis */
+    --accent-bataille: #FF5722;     /* Deep orange for Bataille */
+    --accent-mulvey: #9C27B0;       /* Purple for Mulvey */
+    --accent-clover: #3F51B5;       /* Indigo for Clover */
+    --accent-kristeva: #009688;     /* Teal for Kristeva */
+    --accent-girard: #795548;       /* Brown for Girard */
+    --accent-sade: #F44336;         /* Red for Sade */
+    --accent-williams: #2196F3;     /* Blue for Williams */
+    --accent-jodorowsky: #FF9800;   /* Orange for Jodorowsky */
+    --accent-hartman: #00BCD4;      /* Cyan for Hartman */
+    --accent-brass: #E91E63;        /* Pink for Brass */
+    
+    /* New African Philosophy Accent Colors */
+    --accent-oyewumi: #E91E63;      /* Pink for Oyěwùmí */
+    --accent-simone: #FF9800;       /* Orange for Simone */
+    --accent-eshun: #00BCD4;        /* Cyan for Eshun */
+    --accent-biko: #9C27B0;         /* Purple for Biko */
+    --accent-mandela: #4CAF50;      /* Green for Mandela */
+    --accent-coetzee: #607D8B;      /* Grey for Coetzee */
+    --accent-bhabha: #3F51B5;       /* Indigo for Bhabha */
+    --accent-sontag: #795548;       /* Brown for Sontag */
+    --accent-mudimbe: #795548;      /* Brown for Mudimbe */
+    --accent-diop: #FF5722;         /* Deep Orange for Diop */
+    --accent-freire: #2196F3;       /* Blue for Freire */
+    --accent-kelley: #FF9800;       /* Orange for Kelley */
+    --accent-hitchcock: #607D8B;    /* Grey for Hitchcock */
+    --accent-ogundipe: #E91E63;     /* Pink for Ogundipe */
+    --accent-bakhtin: #795548;      /* Brown for Bakhtin */
+    --accent-okorafor: #00BCD4;     /* Cyan for Okorafor */
+    --accent-haraway: #FF5722;      /* Deep Orange for Haraway */
+    --accent-appiah: #4CAF50;       /* Green for Appiah */
+    --accent-hall: #3F51B5;         /* Indigo for Hall */
+    --accent-ngugi: #795548;        /* Brown for Ngũgĩ */
+    --accent-cesaire: #2196F3;      /* Blue for Césaire */
+    --accent-senghor: #FF9800;      /* Orange for Senghor */
+    --accent-memmi: #9C27B0;        /* Purple for Memmi */
+    --accent-wynette: #E91E63;      /* Pink for Wynette */
+    --accent-ferguson: #607D8B;     /* Grey for Ferguson */
+    --accent-davis-mike: #F44336;   /* Red for Mike Davis */
+    --accent-beyala: #9C27B0;       /* Purple for Beyala */
+    --accent-mama: #E91E63;         /* Pink for Mama */
+    --accent-kahiu: #00BCD4;        /* Cyan for Kahiu */
+    --accent-womack: #FF9800;       /* Orange for Womack */
+    --accent-anderson: #795548;     /* Brown for Anderson */
+    --accent-hountondji: #2196F3;   /* Blue for Hountondji */
+    --accent-wiredu: #4CAF50;       /* Green for Wiredu */
+    --accent-serequeberhan: #795548;/* Brown for Serequeberhan */
+    --accent-comaroff: #607D8B;     /* Grey for Comaroff */
+    --accent-rose: #E91E63;         /* Pink for Rose */
+    --accent-collins: #9C27B0;      /* Purple for Collins */
+    --accent-lorde: #FF9800;        /* Orange for Lorde */
+    --accent-bell: #F44336;         /* Red for Bell */
+    --accent-crenshaw: #E91E63;     /* Pink for Crenshaw */
+    --accent-wilkerson: #795548;    /* Brown for Wilkerson */
+    --accent-alexander: #2196F3;    /* Blue for Alexander */
+    --accent-gilmore: #4CAF50;      /* Green for Gilmore */
+    --accent-gilroy: #009688;       /* Teal for Gilroy */
+    --accent-dash: #9C27B0;         /* Purple for Dash */
+    
     /* Text colors */
     --text-primary: #f0f0f0;
     --text-secondary: #b0b0b0;
@@ -727,7 +773,7 @@ html, body {
     border-color: var(--accent-nietzsche);
 }
 
-/* Lens colors */
+/* Lens colors - EXISTING */
 .lens-nietzsche { background: rgba(156, 39, 176, 0.1); border-color: rgba(156, 39, 176, 0.3); color: var(--accent-nietzsche); }
 .lens-marx { background: rgba(244, 67, 54, 0.1); border-color: rgba(244, 67, 54, 0.3); color: var(--accent-marx); }
 .lens-foucault { background: rgba(33, 150, 243, 0.1); border-color: rgba(33, 150, 243, 0.3); color: var(--accent-foucault); }
@@ -760,14 +806,56 @@ html, body {
 .lens-sade { background: rgba(244, 67, 54, 0.1); border-color: rgba(244, 67, 54, 0.3); color: var(--accent-sade); }
 .lens-williams { background: rgba(33, 150, 243, 0.1); border-color: rgba(33, 150, 243, 0.3); color: var(--accent-williams); }
 .lens-jodorowsky { background: rgba(255, 152, 0, 0.1); border-color: rgba(255, 152, 0, 0.3); color: var(--accent-jodorowsky); }
-.lens-brass { background: rgba(233, 30, 99, 0.1); border-color: rgba(233, 30, 99, 0.3); color: var(--accent-beauvoir); }
+.lens-brass { background: rgba(233, 30, 99, 0.1); border-color: rgba(233, 30, 99, 0.3); color: var(--accent-brass); }
 .lens-nabokov { background: rgba(103, 58, 183, 0.1); border-color: rgba(103, 58, 183, 0.3); color: #673AB7; }
 .lens-bersani { background: rgba(0, 188, 212, 0.1); border-color: rgba(0, 188, 212, 0.3); color: var(--accent-baudrillard); }
 .lens-sontag { background: rgba(96, 125, 139, 0.1); border-color: rgba(96, 125, 139, 0.3); color: var(--accent-adorno); }
 .lens-hartman { background: rgba(0, 188, 212, 0.1); border-color: rgba(0, 188, 212, 0.3); color: var(--accent-hartman); }
-.lens-brass { background: rgba(233, 30, 99, 0.1); border-color: rgba(233, 30, 99, 0.3); color: var(--accent-brass); }
-.lens-davis { background: rgba(244, 67, 54, 0.1); border-color: rgba(244, 67, 54, 0.3); color: var(--accent-davis); }
-   
+
+/* Lens colors - NEW AFRICAN PHILOSOPHY */
+.lens-oyewumi { background: rgba(233, 30, 99, 0.1); border-color: rgba(233, 30, 99, 0.3); color: var(--accent-oyewumi); }
+.lens-simone { background: rgba(255, 152, 0, 0.1); border-color: rgba(255, 152, 0, 0.3); color: var(--accent-simone); }
+.lens-eshun { background: rgba(0, 188, 212, 0.1); border-color: rgba(0, 188, 212, 0.3); color: var(--accent-eshun); }
+.lens-biko { background: rgba(156, 39, 176, 0.1); border-color: rgba(156, 39, 176, 0.3); color: var(--accent-biko); }
+.lens-mandela { background: rgba(76, 175, 80, 0.1); border-color: rgba(76, 175, 80, 0.3); color: var(--accent-mandela); }
+.lens-coetzee { background: rgba(96, 125, 139, 0.1); border-color: rgba(96, 125, 139, 0.3); color: var(--accent-coetzee); }
+.lens-bhabha { background: rgba(63, 81, 181, 0.1); border-color: rgba(63, 81, 181, 0.3); color: var(--accent-bhabha); }
+.lens-mudimbe { background: rgba(121, 85, 72, 0.1); border-color: rgba(121, 85, 72, 0.3); color: var(--accent-mudimbe); }
+.lens-diop { background: rgba(255, 87, 34, 0.1); border-color: rgba(255, 87, 34, 0.3); color: var(--accent-diop); }
+.lens-freire { background: rgba(33, 150, 243, 0.1); border-color: rgba(33, 150, 243, 0.3); color: var(--accent-freire); }
+.lens-kelley { background: rgba(255, 152, 0, 0.1); border-color: rgba(255, 152, 0, 0.3); color: var(--accent-kelley); }
+.lens-hitchcock { background: rgba(96, 125, 139, 0.1); border-color: rgba(96, 125, 139, 0.3); color: var(--accent-hitchcock); }
+.lens-ogundipe { background: rgba(233, 30, 99, 0.1); border-color: rgba(233, 30, 99, 0.3); color: var(--accent-ogundipe); }
+.lens-bakhtin { background: rgba(121, 85, 72, 0.1); border-color: rgba(121, 85, 72, 0.3); color: var(--accent-bakhtin); }
+.lens-okorafor { background: rgba(0, 188, 212, 0.1); border-color: rgba(0, 188, 212, 0.3); color: var(--accent-okorafor); }
+.lens-appiah { background: rgba(76, 175, 80, 0.1); border-color: rgba(76, 175, 80, 0.3); color: var(--accent-appiah); }
+.lens-hall { background: rgba(63, 81, 181, 0.1); border-color: rgba(63, 81, 181, 0.3); color: var(--accent-hall); }
+.lens-ngugi { background: rgba(121, 85, 72, 0.1); border-color: rgba(121, 85, 72, 0.3); color: var(--accent-ngugi); }
+.lens-cesaire { background: rgba(33, 150, 243, 0.1); border-color: rgba(33, 150, 243, 0.3); color: var(--accent-cesaire); }
+.lens-senghor { background: rgba(255, 152, 0, 0.1); border-color: rgba(255, 152, 0, 0.3); color: var(--accent-senghor); }
+.lens-memmi { background: rgba(156, 39, 176, 0.1); border-color: rgba(156, 39, 176, 0.3); color: var(--accent-memmi); }
+.lens-wynette { background: rgba(233, 30, 99, 0.1); border-color: rgba(233, 30, 99, 0.3); color: var(--accent-wynette); }
+.lens-ferguson { background: rgba(96, 125, 139, 0.1); border-color: rgba(96, 125, 139, 0.3); color: var(--accent-ferguson); }
+.lens-davis-mike { background: rgba(244, 67, 54, 0.1); border-color: rgba(244, 67, 54, 0.3); color: var(--accent-davis-mike); }
+.lens-beyala { background: rgba(156, 39, 176, 0.1); border-color: rgba(156, 39, 176, 0.3); color: var(--accent-beyala); }
+.lens-mama { background: rgba(233, 30, 99, 0.1); border-color: rgba(233, 30, 99, 0.3); color: var(--accent-mama); }
+.lens-kahiu { background: rgba(0, 188, 212, 0.1); border-color: rgba(0, 188, 212, 0.3); color: var(--accent-kahiu); }
+.lens-womack { background: rgba(255, 152, 0, 0.1); border-color: rgba(255, 152, 0, 0.3); color: var(--accent-womack); }
+.lens-anderson { background: rgba(121, 85, 72, 0.1); border-color: rgba(121, 85, 72, 0.3); color: var(--accent-anderson); }
+.lens-hountondji { background: rgba(33, 150, 243, 0.1); border-color: rgba(33, 150, 243, 0.3); color: var(--accent-hountondji); }
+.lens-wiredu { background: rgba(76, 175, 80, 0.1); border-color: rgba(76, 175, 80, 0.3); color: var(--accent-wiredu); }
+.lens-serequeberhan { background: rgba(121, 85, 72, 0.1); border-color: rgba(121, 85, 72, 0.3); color: var(--accent-serequeberhan); }
+.lens-comaroff { background: rgba(96, 125, 139, 0.1); border-color: rgba(96, 125, 139, 0.3); color: var(--accent-comaroff); }
+.lens-rose { background: rgba(233, 30, 99, 0.1); border-color: rgba(233, 30, 99, 0.3); color: var(--accent-rose); }
+.lens-collins { background: rgba(156, 39, 176, 0.1); border-color: rgba(156, 39, 176, 0.3); color: var(--accent-collins); }
+.lens-lorde { background: rgba(255, 152, 0, 0.1); border-color: rgba(255, 152, 0, 0.3); color: var(--accent-lorde); }
+.lens-bell { background: rgba(244, 67, 54, 0.1); border-color: rgba(244, 67, 54, 0.3); color: var(--accent-bell); }
+.lens-crenshaw { background: rgba(233, 30, 99, 0.1); border-color: rgba(233, 30, 99, 0.3); color: var(--accent-crenshaw); }
+.lens-wilkerson { background: rgba(121, 85, 72, 0.1); border-color: rgba(121, 85, 72, 0.3); color: var(--accent-wilkerson); }
+.lens-alexander { background: rgba(33, 150, 243, 0.1); border-color: rgba(33, 150, 243, 0.3); color: var(--accent-alexander); }
+.lens-gilmore { background: rgba(76, 175, 80, 0.1); border-color: rgba(76, 175, 80, 0.3); color: var(--accent-gilmore); }
+.lens-gilroy { background: rgba(0, 150, 136, 0.1); border-color: rgba(0, 150, 136, 0.3); color: var(--accent-gilroy); }
+.lens-dash { background: rgba(156, 39, 176, 0.1); border-color: rgba(156, 39, 176, 0.3); color: var(--accent-dash); }
 
 /* ====== CRITICS PAGE ====== */
 .critics-header {
@@ -1131,4 +1219,4 @@ html, body {
         width: 50px;
         bottom: -6px;
     }
-    }
+        }
