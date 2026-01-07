@@ -825,8 +825,6 @@ html, body {
 .lens-bersani { background: rgba(0, 188, 212, 0.1); border-color: rgba(0, 188, 212, 0.3); color: var(--accent-baudrillard); }
 .lens-sontag { background: rgba(96, 125, 139, 0.1); border-color: rgba(96, 125, 139, 0.3); color: var(--accent-adorno); }
 .lens-hartman { background: rgba(0, 188, 212, 0.1); border-color: rgba(0, 188, 212, 0.3); color: var(--accent-hartman); }
-
-/* Lens colors - NEW AFRICAN PHILOSOPHY */
 .lens-oyewumi { background: rgba(233, 30, 99, 0.1); border-color: rgba(233, 30, 99, 0.3); color: var(--accent-oyewumi); }
 .lens-simone { background: rgba(255, 152, 0, 0.1); border-color: rgba(255, 152, 0, 0.3); color: var(--accent-simone); }
 .lens-eshun { background: rgba(0, 188, 212, 0.1); border-color: rgba(0, 188, 212, 0.3); color: var(--accent-eshun); }
@@ -870,6 +868,12 @@ html, body {
 .lens-gilmore { background: rgba(76, 175, 80, 0.1); border-color: rgba(76, 175, 80, 0.3); color: var(--accent-gilmore); }
 .lens-gilroy { background: rgba(0, 150, 136, 0.1); border-color: rgba(0, 150, 136, 0.3); color: var(--accent-gilroy); }
 .lens-dash { background: rgba(156, 39, 176, 0.1); border-color: rgba(156, 39, 176, 0.3); color: var(--accent-dash); }
+.lens-zizek { background: rgba(233, 30, 99, 0.1); border-color: rgba(233, 30, 99, 0.3); color: #E91E63; }
+.lens-agamben { background: rgba(76, 175, 80, 0.1); border-color: rgba(76, 175, 80, 0.3); color: #4CAF50; }
+.lens-deleuze { background: rgba(156, 39, 176, 0.1); border-color: rgba(156, 39, 176, 0.3); color: #9C27B0; }
+.lens-schmitt { background: rgba(244, 67, 54, 0.1); border-color: rgba(244, 67, 54, 0.3); color: #F44336; }
+.lens-hobbes { background: rgba(121, 85, 72, 0.1); border-color: rgba(121, 85, 72, 0.3); color: #795548; }
+.lens-arendt { background: rgba(33, 150, 243, 0.1); border-color: rgba(33, 150, 243, 0.3); color: #2196F3; }
 
 /* ====== CRITICS PAGE ====== */
 .critics-header {
