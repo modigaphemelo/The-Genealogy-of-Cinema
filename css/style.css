@@ -23,6 +23,15 @@
     --accent-west: #FF9800;          /* Orange for West */
     --accent-baldwin: #795548;       /* Brown for Baldwin */
     --accent-davis: #F44336;         /* Red for Davis */
+    --accent-bataille: #FF5722;       /* Deep orange for Bataille */
+    --accent-mulvey: #9C27B0;         /* Purple for Mulvey */
+    --accent-clover: #3F51B5;         /* Indigo for Clover */
+    --accent-kristeva: #009688;       /* Teal for Kristeva */
+    --accent-girard: #795548;         /* Brown for Girard */
+    --accent-sade: #F44336;           /* Red for Sade */
+    --accent-williams: #2196F3;       /* Blue for Williams */
+    --accent-jodorowsky: #FF9800;     /* Orange for Jodorowsky */
+    
     /* Text colors */
     --text-primary: #f0f0f0;
     --text-secondary: #b0b0b0;
@@ -740,6 +749,19 @@ html, body {
 .lens-west { background: rgba(255, 152, 0, 0.1); border-color: rgba(255, 152, 0, 0.3); color: var(--accent-west); }
 .lens-baldwin { background: rgba(121, 85, 72, 0.1); border-color: rgba(121, 85, 72, 0.3); color: var(--accent-baldwin); }
 .lens-davis { background: rgba(244, 67, 54, 0.1); border-color: rgba(244, 67, 54, 0.3); color: var(--accent-davis); }
+.lens-bataille { background: rgba(255, 87, 34, 0.1); border-color: rgba(255, 87, 34, 0.3); color: var(--accent-bataille); }
+.lens-mulvey { background: rgba(156, 39, 176, 0.1); border-color: rgba(156, 39, 176, 0.3); color: var(--accent-mulvey); }
+.lens-clover { background: rgba(63, 81, 181, 0.1); border-color: rgba(63, 81, 181, 0.3); color: var(--accent-clover); }
+.lens-kristeva { background: rgba(0, 150, 136, 0.1); border-color: rgba(0, 150, 136, 0.3); color: var(--accent-kristeva); }
+.lens-girard { background: rgba(121, 85, 72, 0.1); border-color: rgba(121, 85, 72, 0.3); color: var(--accent-girard); }
+.lens-sade { background: rgba(244, 67, 54, 0.1); border-color: rgba(244, 67, 54, 0.3); color: var(--accent-sade); }
+.lens-williams { background: rgba(33, 150, 243, 0.1); border-color: rgba(33, 150, 243, 0.3); color: var(--accent-williams); }
+.lens-jodorowsky { background: rgba(255, 152, 0, 0.1); border-color: rgba(255, 152, 0, 0.3); color: var(--accent-jodorowsky); }
+.lens-brass { background: rgba(233, 30, 99, 0.1); border-color: rgba(233, 30, 99, 0.3); color: var(--accent-beauvoir); }
+.lens-nabokov { background: rgba(103, 58, 183, 0.1); border-color: rgba(103, 58, 183, 0.3); color: #673AB7; }
+.lens-bersani { background: rgba(0, 188, 212, 0.1); border-color: rgba(0, 188, 212, 0.3); color: var(--accent-baudrillard); }
+.lens-sontag { background: rgba(96, 125, 139, 0.1); border-color: rgba(96, 125, 139, 0.3); color: var(--accent-adorno); }
+
 
 /* ====== CRITICS PAGE ====== */
 .critics-header {
