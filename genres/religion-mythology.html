@@ -6,7 +6,188 @@
     <title>Religion & Mythology | The Genealogy of Cinema</title>
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <meta name="description" content="Atheist-materialist analysis of religion and mythology cinema through critical theory lenses: Nietzsche, Hitchens, Foucault, Dawkins, Derrida, and more.">
+    <style>
+        /* Atheist Methodology Banner */
+        .atheist-methodology {
+            background: linear-gradient(135deg, rgba(231, 76, 60, 0.15), rgba(44, 62, 80, 0.15));
+            border: 2px solid rgba(231, 76, 60, 0.3);
+            border-radius: 12px;
+            padding: 25px;
+            margin: 30px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .atheist-methodology::before {
+            content: "⚛";
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 40px;
+            opacity: 0.1;
+        }
+        
+        .atheist-methodology h3 {
+            color: #e74c3c;
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.4rem;
+        }
+        
+        .atheist-methodology h3::before {
+            content: "⚛";
+            font-size: 24px;
+        }
+        
+        .methodology-pillars {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .pillar {
+            background: rgba(52, 73, 94, 0.2);
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #e74c3c;
+        }
+        
+        .pillar h4 {
+            color: #e74c3c;
+            margin-top: 0;
+            font-size: 1rem;
+        }
+        
+        /* Movie card atheist notes */
+        .movie-card .atheist-analysis {
+            background: rgba(231, 76, 60, 0.08);
+            border: 1px solid rgba(231, 76, 60, 0.2);
+            border-radius: 6px;
+            padding: 10px 12px;
+            margin-top: 10px;
+            font-size: 0.85rem;
+            line-height: 1.4;
+            position: relative;
+        }
+        
+        .movie-card .atheist-analysis::before {
+            content: "⚛";
+            position: absolute;
+            left: 8px;
+            top: 8px;
+            font-size: 12px;
+            opacity: 0.7;
+        }
+        
+        .atheist-analysis .label {
+            color: #e74c3c;
+            font-weight: 600;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-right: 5px;
+        }
+        
+        /* Section headers with atheist themes */
+        .all-movies-header h2 {
+            position: relative;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .all-movies-header h2::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, #e74c3c, #3498db);
+            border-radius: 2px;
+        }
+        
+        /* Rating badges for atheist critiques */
+        .rating-badge.rating-1,
+        .rating-badge.rating-2,
+        .rating-badge.rating-3 {
+            background: linear-gradient(135deg, #c0392b, #e74c3c);
+        }
+        
+        .rating-badge.rating-7,
+        .rating-badge.rating-8,
+        .rating-badge.rating-9,
+        .rating-badge.rating-10 {
+            background: linear-gradient(135deg, #27ae60, #2ecc71);
+        }
+        
+        /* Movie card hover effects */
+        .movie-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .movie-card:hover .atheist-analysis {
+            background: rgba(231, 76, 60, 0.12);
+            border-color: rgba(231, 76, 60, 0.3);
+        }
+        
+        /* Critical thinker tags */
+        .movie-lens {
+            background: rgba(52, 152, 219, 0.1);
+            border: 1px solid rgba(52, 152, 219, 0.2);
+            border-radius: 4px;
+            padding: 6px 10px;
+            margin: 8px 0;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: #3498db;
+        }
+        
+        .lens-nietzsche { border-left: 3px solid #e74c3c; }
+        .lens-hitchens { border-left: 3px solid #e67e22; }
+        .lens-dawkins { border-left: 3px solid #16a085; }
+        .lens-marx { border-left: 3px solid #c0392b; }
+        .lens-foucault { border-left: 3px solid #8e44ad; }
+        .lens-sartre { border-left: 3px solid #2980b9; }
+        .lens-harris { border-left: 3px solid #2c3e50; }
+        .lens-adorno { border-left: 3px solid #7f8c8d; }
+        .lens-derrida { border-left: 3px solid #f39c12; }
+        .lens-schmitt { border-left: 3px solid #34495e; }
+        .lens-baudrillard { border-left: 3px solid #9b59b6; }
+        .lens-haraway { border-left: 3px solid #1abc9c; }
+        .lens-campbell { border-left: 3px solid #d35400; }
+        .lens-said { border-left: 3px solid #3498db; }
+        
+        /* Responsive improvements */
+        @media (max-width: 768px) {
+            .methodology-pillars {
+                grid-template-columns: 1fr;
+            }
+            
+            .atheist-methodology {
+                padding: 20px;
+                margin: 20px 0;
+            }
+            
+            .movie-grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .movie-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .atheist-methodology h3 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Mobile Menu Button -->
@@ -69,48 +250,84 @@
 
     <!-- Main Content -->
     <main class="main-content">
-        <!-- Genre Introduction with Atheist Methodological Statement -->
+        <!-- Genre Introduction with Atheist Banner -->
         <section class="home-intro">
             <h1>Religion & Mythology</h1>
-            <p class="tagline">Divine narratives analyzed through atheist-materialist frameworks.</p>
+            <p class="tagline">Atheist-materialist analysis of divine narratives and institutional power</p>
             
-            <div class="methodological-statement">
-                <h3>Methodological Stance: Atheist-Materialist Analysis</h3>
-                <p>This genre is analyzed from an explicit <strong>atheist, anti-theist, and materialist perspective</strong>. All religious claims are treated as human cultural productions to be examined genealogically rather than theological truths. Films are evaluated based on:</p>
-                <ul>
-                    <li><strong>Intellectual honesty</strong> over emotional manipulation</li>
-                    <li><strong>Critical distance</strong> from religious dogma</li>
-                    <li><strong>Suspicion of institutional power</strong> in religious hierarchies</li>
-                    <li><strong>Humanist ethics</strong> without supernatural justifications</li>
-                    <li><strong>Genealogical analysis</strong> of religious concepts as social constructs</li>
-                </ul>
-                <p><em>Higher ratings indicate films that successfully interrogate religious power structures, maintain critical distance, or offer philosophical complexity. Lower ratings indicate films that proselytize, manipulate emotionally, or avoid intellectual rigor.</em></p>
+            <div class="atheist-methodology">
+                <h3>⚛ Atheist-Materialist Analytical Framework</h3>
+                <p>All films analyzed from an explicit <strong>atheist, anti-theist, and materialist perspective</strong>. Religious claims are examined as human cultural productions, not theological truths.</p>
+                
+                <div class="methodology-pillars">
+                    <div class="pillar">
+                        <h4>Genealogical Suspicion</h4>
+                        <p>Tracing religious concepts to psychological/social origins using Nietzsche's method</p>
+                    </div>
+                    <div class="pillar">
+                        <h4>Materialist Critique</h4>
+                        <p>Analyzing institutional power, economics, and social control (Marx, Foucault)</p>
+                    </div>
+                    <div class="pillar">
+                        <h4>Scientific Skepticism</h4>
+                        <p>Applying Dawkins/Harris frameworks to faith claims and "miracles"</p>
+                    </div>
+                    <div class="pillar">
+                        <h4>Anti-Theist Satire</h4>
+                        <p>Valuing Hitchens-style critique of religious harm and manipulation</p>
+                    </div>
+                </div>
+                
+                <p><strong>Rating Philosophy:</strong> Higher ratings for intellectual honesty, critical distance, and philosophical complexity. Lower ratings for emotional manipulation, proselytizing, and intellectual dishonesty.</p>
             </div>
         </section>
 
-        <!-- Section 1: Genealogy of Sacred Texts (Atheist Critique) -->
+        <!-- Section 1: Anti-Theist Satire & Critique -->
         <section class="all-movies">
             <div class="all-movies-header">
-                <h2>Genealogy of Sacred Texts</h2>
-                <p class="subtitle">Nietzsche's "God is dead," Hitchens' anti-theism, Dawkins' scientific skepticism applied to biblical narratives.</p>
+                <h2>Anti-Theist Satire & Critique</h2>
+                <p class="subtitle">Hitchens' "religion poisons everything," Nietzsche's transvaluation, Dawkins' scientific skepticism</p>
             </div>
 
             <div class="movie-grid">
-                <!-- Noah -->
+                <!-- Life of Brian -->
                 <article class="movie-card">
-                    <a href="religion/noah.html">
+                    <a href="religion/life-of-brian.html">
                         <div class="movie-poster">
-                            <img src="../img/religion/Noah.jpg" alt="Noah" loading="lazy">
-                            <div class="rating-badge rating-8">8</div>
+                            <img src="../img/religion/Life of Brian.jpg" alt="Life of Brian" loading="lazy">
+                            <div class="rating-badge rating-10">10</div>
                         </div>
                         <div class="movie-info">
-                            <h3 class="movie-title">Noah</h3>
+                            <h3 class="movie-title">Life of Brian</h3>
                             <div class="movie-meta">
-                                <span class="movie-year">2014</span>
-                                <span class="movie-director">Aronofsky</span>
+                                <span class="movie-year">1979</span>
+                                <span class="movie-director">Jones</span>
                             </div>
-                            <div class="movie-lens lens-nietzsche">Nietzsche: Environmental Ethics as Slave Morality Critique</div>
-                            <div class="atheist-note">Atheist analysis: Treats divine command as psychological crisis rather than theological truth</div>
+                            <div class="movie-lens lens-hitchens">Hitchens: Messiah Complex as Herd Morality Parody</div>
+                            <div class="atheist-analysis">
+                                <span class="label">Atheist Analysis:</span> Satirizes religious devotion, messianic expectations, and blind faith through mistaken identity comedy. Anti-theist masterpiece that targets dogma while promoting humanist ethics.
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Religulous -->
+                <article class="movie-card">
+                    <a href="religion/religulous.html">
+                        <div class="movie-poster">
+                            <img src="../img/religion/Religulous.jpg" alt="Religulous" loading="lazy">
+                            <div class="rating-badge rating-7">7</div>
+                        </div>
+                        <div class="movie-info">
+                            <h3 class="movie-title">Religulous</h3>
+                            <div class="movie-meta">
+                                <span class="movie-year">2008</span>
+                                <span class="movie-director">Charles</span>
+                            </div>
+                            <div class="movie-lens lens-dawkins">Dawkins: Documentary as Scientific Skepticism of Faith</div>
+                            <div class="atheist-analysis">
+                                <span class="label">Atheist Analysis:</span> Direct confrontation of religious irrationality through humor and interview. Applies Hitchens-style polemic to religious claims, though sometimes prioritizes comedy over depth.
+                            </div>
                         </div>
                     </a>
                 </article>
@@ -129,112 +346,9 @@
                                 <span class="movie-director">Jeymes Samuel</span>
                             </div>
                             <div class="movie-lens lens-hitchens">Hitchens: Messiah as Social Performance & Hustle</div>
-                            <div class="atheist-note">Anti-theist analysis: Satirizes messianic claims as entrepreneurial opportunism</div>
-                        </div>
-                    </a>
-                </article>
-
-                <!-- Exodus: Gods and Kings -->
-                <article class="movie-card">
-                    <a href="religion/exodus-gods-and-kings.html">
-                        <div class="movie-poster">
-                            <img src="../img/religion/Exodus Gods and Kings.jpg" alt="Exodus: Gods and Kings" loading="lazy">
-                            <div class="rating-badge rating-3">3</div>
-                        </div>
-                        <div class="movie-info">
-                            <h3 class="movie-title">Exodus: Gods and Kings</h3>
-                            <div class="movie-meta">
-                                <span class="movie-year">2014</span>
-                                <span class="movie-director">Scott</span>
+                            <div class="atheist-analysis">
+                                <span class="label">Atheist Analysis:</span> Satirizes messianic claims as entrepreneurial opportunism. Examines religion as social performance and economic enterprise in ancient context.
                             </div>
-                            <div class="movie-lens lens-marx">Marx: Liberation Theology as Imperial Spectacle</div>
-                            <div class="atheist-note">Materialist critique: Reduces divine intervention to natural disasters and political manipulation</div>
-                        </div>
-                    </a>
-                </article>
-
-                <!-- Paul, Apostle of Christ -->
-                <article class="movie-card">
-                    <a href="religion/paul-apostle-of-christ.html">
-                        <div class="movie-poster">
-                            <img src="../img/religion/Paul Apostle of Christ.jpg" alt="Paul, Apostle of Christ" loading="lazy">
-                            <div class="rating-badge rating-5">5</div>
-                        </div>
-                        <div class="movie-info">
-                            <h3 class="movie-title">Paul, Apostle of Christ</h3>
-                            <div class="movie-meta">
-                                <span class="movie-year">2018</span>
-                                <span class="movie-director">Andrew Hyatt</span>
-                            </div>
-                            <div class="movie-lens lens-foucault">Foucault: Prison Writing as Technology of Religious Self</div>
-                            <div class="atheist-note">Atheist reading: Interprets religious experience as psychological coping mechanism in confinement</div>
-                        </div>
-                    </a>
-                </article>
-            </div>
-        </section>
-
-        <!-- Section 2: Anti-Theist Satire & Critique -->
-        <section class="all-movies">
-            <div class="all-movies-header">
-                <h2>Anti-Theist Satire & Critique</h2>
-                <p class="subtitle">Hitchens' "religion poisons everything," Dawkins' meme theory, Nietzsche's transvaluation in religious satire.</p>
-            </div>
-
-            <div class="movie-grid">
-                <!-- Life of Brian -->
-                <article class="movie-card">
-                    <a href="religion/life-of-brian.html">
-                        <div class="movie-poster">
-                            <img src="../img/religion/Life of Brian.jpg" alt="Life of Brian" loading="lazy">
-                            <div class="rating-badge rating-10">10</div>
-                        </div>
-                        <div class="movie-info">
-                            <h3 class="movie-title">Life of Brian</h3>
-                            <div class="movie-meta">
-                                <span class="movie-year">1979</span>
-                                <span class="movie-director">Jones</span>
-                            </div>
-                            <div class="movie-lens lens-hitchens">Hitchens: Messiah Complex as Herd Morality Parody</div>
-                            <div class="atheist-note">Anti-theist masterpiece: Satirizes religious devotion, dogma, and messianic expectations</div>
-                        </div>
-                    </a>
-                </article>
-
-                <!-- Religulous -->
-                <article class="movie-card">
-                    <a href="religion/religulous.html">
-                        <div class="movie-poster">
-                            <img src="../img/religion/Religulous.jpg" alt="Religulous" loading="lazy">
-                            <div class="rating-badge rating-7">7</div>
-                        </div>
-                        <div class="movie-info">
-                            <h3 class="movie-title">Religulous</h3>
-                            <div class="movie-meta">
-                                <span class="movie-year">2008</span>
-                                <span class="movie-director">Charles</span>
-                            </div>
-                            <div class="movie-lens lens-dawkins">Dawkins: Satire as Scientific Skepticism of Religious Claims</div>
-                            <div class="atheist-note">Documentary as atheist polemic: Directly confronts religious irrationality with humor</div>
-                        </div>
-                    </a>
-                </article>
-
-                <!-- The Invention of Lying -->
-                <article class="movie-card">
-                    <a href="religion/the-invention-of-lying.html">
-                        <div class="movie-poster">
-                            <img src="../img/religion/The Invention of Lying.jpg" alt="The Invention of Lying" loading="lazy">
-                            <div class="rating-badge rating-6">6</div>
-                        </div>
-                        <div class="movie-info">
-                            <h3 class="movie-title">The Invention of Lying</h3>
-                            <div class="movie-meta">
-                                <span class="movie-year">2009</span>
-                                <span class="movie-director">Gervais & Robinson</span>
-                            </div>
-                            <div class="movie-lens lens-nietzsche">Nietzsche: Religion as Noble Lie for Social Control</div>
-                            <div class="atheist-note">Atheist premise: Religion invented as comforting fiction in a truth-telling world</div>
                         </div>
                     </a>
                 </article>
@@ -253,7 +367,9 @@
                                 <span class="movie-director">Harold Cronk</span>
                             </div>
                             <div class="movie-lens lens-hitchens">Hitchens: Evangelical Propaganda as Intellectual Dishonesty</div>
-                            <div class="atheist-note">Anti-theist critique: Strawman argumentation and emotional manipulation as proselytization</div>
+                            <div class="atheist-analysis">
+                                <span class="label">Atheist Critique:</span> Strawman argumentation and emotional manipulation as proselytization. Misrepresents atheism while promoting persecution complex. Anti-intellectual approach to faith debates.
+                            </div>
                         </div>
                     </a>
                 </article>
@@ -272,18 +388,125 @@
                                 <span class="movie-director">Harold Cronk</span>
                             </div>
                             <div class="movie-lens lens-dawkins">Dawkins: Creationist Rhetoric in Courtroom Drama</div>
-                            <div class="atheist-note">Materialist analysis: Misrepresents secularism as persecution for dramatic effect</div>
+                            <div class="atheist-analysis">
+                                <span class="label">Materialist Analysis:</span> Misrepresents secularism as persecution for dramatic effect. Continues franchise's pattern of intellectual dishonesty and emotional manipulation.
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Yes, God, Yes -->
+                <article class="movie-card">
+                    <a href="religion/yes-god-yes.html">
+                        <div class="movie-poster">
+                            <img src="../img/religion/Yes, God, Yes.jpg" alt="Yes, God, Yes" loading="lazy">
+                            <div class="rating-badge rating-9">9</div>
+                        </div>
+                        <div class="movie-info">
+                            <h3 class="movie-title">Yes, God, Yes</h3>
+                            <div class="movie-meta">
+                                <span class="movie-year">2019</span>
+                                <span class="movie-director">Karen Maine</span>
+                            </div>
+                            <div class="movie-lens lens-foucault">Foucault: Catholic Girl's Desire as Technology of the Self</div>
+                            <div class="atheist-analysis">
+                                <span class="label">Feminist-Atheist Analysis:</span> Examines sexual repression and guilt in Catholic upbringing. Critiques purity culture through personal awakening narrative.
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- The Invention of Lying -->
+                <article class="movie-card">
+                    <a href="religion/the-invention-of-lying.html">
+                        <div class="movie-poster">
+                            <img src="../img/religion/The Invention of Lying.jpg" alt="The Invention of Lying" loading="lazy">
+                            <div class="rating-badge rating-6">6</div>
+                        </div>
+                        <div class="movie-info">
+                            <h3 class="movie-title">The Invention of Lying</h3>
+                            <div class="movie-meta">
+                                <span class="movie-year">2009</span>
+                                <span class="movie-director">Gervais & Robinson</span>
+                            </div>
+                            <div class="movie-lens lens-nietzsche">Nietzsche: Religion as Noble Lie for Social Control</div>
+                            <div class="atheist-analysis">
+                                <span class="label">Atheist Premise:</span> Religion invented as comforting fiction in a truth-telling world. Bold concept but softens into conventional romantic comedy structure.
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Bruce Almighty -->
+                <article class="movie-card">
+                    <a href="religion/bruce-almighty.html">
+                        <div class="movie-poster">
+                            <img src="../img/religion/Bruce Almighty.jpg" alt="Bruce Almighty" loading="lazy">
+                            <div class="rating-badge rating-5">5</div>
+                        </div>
+                        <div class="movie-info">
+                            <h3 class="movie-title">Bruce Almighty</h3>
+                            <div class="movie-meta">
+                                <span class="movie-year">2003</span>
+                                <span class="movie-director">Shadyac</span>
+                            </div>
+                            <div class="movie-lens lens-nietzsche">Nietzsche: Divine Power as Test of Übermensch Ethics</div>
+                            <div class="atheist-analysis">
+                                <span class="label">Humanist Reading:</span> Explores ethical responsibility through divine power fantasy. Ultimately reinforces conventional morality despite supernatural premise.
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Evan Almighty -->
+                <article class="movie-card">
+                    <a href="religion/evan-almighty.html">
+                        <div class="movie-poster">
+                            <img src="../img/religion/Evan Almighty.jpg" alt="Evan Almighty" loading="lazy">
+                            <div class="rating-badge rating-2">2</div>
+                        </div>
+                        <div class="movie-info">
+                            <h3 class="movie-title">Evan Almighty</h3>
+                            <div class="movie-meta">
+                                <span class="movie-year">2007</span>
+                                <span class="movie-director">Shadyac</span>
+                            </div>
+                            <div class="movie-lens lens-nietzsche">Nietzsche: Congressional Ark as Parody of Philosopher-King</div>
+                            <div class="atheist-analysis">
+                                <span class="label">Satire Critique:</span> Slapstick humor overwhelms any serious engagement with political or religious themes. Reduces biblical narrative to family comedy clichés.
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- The Man Who Sued God -->
+                <article class="movie-card">
+                    <a href="religion/the-man-who-sued-god.html">
+                        <div class="movie-poster">
+                            <img src="../img/religion/The Man Who Sued God.jpg" alt="The Man Who Sued God" loading="lazy">
+                            <div class="rating-badge rating-7">7</div>
+                        </div>
+                        <div class="movie-info">
+                            <h3 class="movie-title">The Man Who Sued God</h3>
+                            <div class="movie-meta">
+                                <span class="movie-year">2001</span>
+                                <span class="movie-director">Joffé</span>
+                            </div>
+                            <div class="movie-lens lens-derrida">Derrida: Legal Action as Supplement to Divine Justice</div>
+                            <div class="atheist-analysis">
+                                <span class="label">Legal-Satirical Approach:</span> Uses legal framework to critique religious institutional responsibility. Clever premise but execution lacks philosophical depth.
+                            </div>
                         </div>
                     </a>
                 </article>
             </div>
         </section>
 
-        <!-- Section 3: Institutional Power & Pastoral Control -->
+        <!-- Section 2: Institutional Power & Pastoral Control -->
         <section class="all-movies">
             <div class="all-movies-header">
                 <h2>Institutional Power & Pastoral Control</h2>
-                <p class="subtitle">Foucault's pastoral power, Marx's "opium of the people," Adorno's culture industry in religious institutions.</p>
+                <p class="subtitle">Foucault's pastoral power, Marx's "opium of the people," Adorno's culture industry</p>
             </div>
 
             <div class="movie-grid">
@@ -300,8 +523,10 @@
                                 <span class="movie-year">2019</span>
                                 <span class="movie-director">Meirelles</span>
                             </div>
-                            <div class="movie-lens lens-foucault">Foucault: Papal Power as Pastoral Control vs. Institutional Reform</div>
-                            <div class="atheist-note">Materialist analysis: Vatican politics as bureaucratic power struggle, not divine guidance</div>
+                            <div class="movie-lens lens-foucault">Foucault: Papal Power as Pastoral Control vs. Reform</div>
+                            <div class="atheist-analysis">
+                                <span class="label">Materialist Analysis:</span> Vatican politics as bureaucratic power struggle rather than divine guidance. Examines institutional inertia vs. reform in religious hierarchy.
+                            </div>
                         </div>
                     </a>
                 </article>
@@ -320,7 +545,30 @@
                                 <span class="movie-director">Howard</span>
                             </div>
                             <div class="movie-lens lens-foucault">Foucault: Archive Power & Heretical Knowledge Suppression</div>
-                            <div class="atheist-note">Conspiracy theory as critique: Imagines Church as historical truth-suppressor</div>
+                            <div class="atheist-analysis">
+                                <span class="label">Conspiracy Critique:</span> Imagines Church as historical truth-suppressor through conspiracy narrative. More thriller than serious historical critique.
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Three Christs -->
+                <article class="movie-card">
+                    <a href="religion/three-christs.html">
+                        <div class="movie-poster">
+                            <img src="../img/religion/Three Christs.jpg" alt="Three Christs" loading="lazy">
+                            <div class="rating-badge rating-4">4</div>
+                        </div>
+                        <div class="movie-info">
+                            <h3 class="movie-title">Three Christs</h3>
+                            <div class="movie-meta">
+                                <span class="movie-year">2017</span>
+                                <span class="movie-director">Avnet</span>
+                            </div>
+                            <div class="movie-lens lens-foucault">Foucault: Psychiatric Power & Messianic Claims</div>
+                            <div class="atheist-analysis">
+                                <span class="label">Psychiatric Analysis:</span> Examines messianic delusions within psychiatric institution. Raises questions about diagnosis and belief but lacks narrative drive.
+                            </div>
                         </div>
                     </a>
                 </article>
@@ -338,8 +586,10 @@
                                 <span class="movie-year">2022</span>
                                 <span class="movie-director">Adamma Ebo</span>
                             </div>
-                            <div class="movie-lens lens-marx">Marx: Megachurch as Entrepreneurial Capitalism in Religious Guise</div>
-                            <div class="atheist-note">Materialist satire: Televangelism as performance for profit and social status</div>
+                            <div class="movie-lens lens-marx">Marx: Megachurch as Entrepreneurial Capitalism</div>
+                            <div class="atheist-analysis">
+                                <span class="label">Materialist Analysis:</span> Televangelism as performance for profit and social status. Examines religious institution as business enterprise and brand management.
+                            </div>
                         </div>
                     </a>
                 </article>
@@ -357,172 +607,42 @@
                                 <span class="movie-year">2015</span>
                                 <span class="movie-director">Mette</span>
                             </div>
-                            <div class="movie-lens lens-adorno">Adorno: Interwoven Faith Stories as Culture Industry Product</div>
-                            <div class="atheist-note">Propaganda analysis: Emotional manipulation through interconnected conversion narratives</div>
+                            <div class="movie-lens lens-adorno">Adorno: Interwoven Faith as Culture Industry</div>
+                            <div class="atheist-analysis">
+                                <span class="label">Ideology Critique:</span> Emotional manipulation through interconnected conversion narratives. Propaganda film using multiple storylines to promote evangelical worldview.
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- The Preacher's Wife -->
+                <article class="movie-card">
+                    <a href="religion/the-preachers-wife.html">
+                        <div class="movie-poster">
+                            <img src="../img/religion/The Preachers Wife.jpg" alt="The Preacher's Wife" loading="lazy">
+                            <div class="rating-badge rating-6">6</div>
+                        </div>
+                        <div class="movie-info">
+                            <h3 class="movie-title">The Preacher's Wife</h3>
+                            <div class="movie-meta">
+                                <span class="movie-year">1996</span>
+                                <span class="movie-director">Marshall</span>
+                            </div>
+                            <div class="movie-lens lens-foucault">Foucault: Pastoral Marriage as Site of Institutional Pressure</div>
+                            <div class="atheist-analysis">
+                                <span class="label">Gender Analysis:</span> Examines expectations placed on clergy spouses within religious community. Traditional narrative with limited critical perspective.
+                            </div>
                         </div>
                     </a>
                 </article>
             </div>
         </section>
 
-        <!-- Section 4: Demonic Politics & Apocalyptic Anxiety -->
+        <!-- Section 3: Scientific Skepticism & Medical Materialism -->
         <section class="all-movies">
             <div class="all-movies-header">
-                <h2>Demonic Politics & Apocalyptic Anxiety</h2>
-                <p class="subtitle">Schmitt's political theology, Mbembe's necropolitics, Baudrillard's simulation in eschatological narratives.</p>
-            </div>
-
-            <div class="movie-grid">
-                <!-- The Devil's Advocate -->
-                <article class="movie-card">
-                    <a href="religion/the-devils-advocate.html">
-                        <div class="movie-poster">
-                            <img src="../img/religion/The Devil_s Advocate.jpg" alt="The Devil's Advocate" loading="lazy">
-                            <div class="rating-badge rating-7">7</div>
-                        </div>
-                        <div class="movie-info">
-                            <h3 class="movie-title">The Devil's Advocate</h3>
-                            <div class="movie-meta">
-                                <span class="movie-year">1997</span>
-                                <span class="movie-director">Hackford</span>
-                            </div>
-                            <div class="movie-lens lens-schmitt">Schmitt: Law Firm as Modern Satanic Temptation of Sovereign Power</div>
-                            <div class="atheist-note">Materialist allegory: Corporate greed as contemporary manifestation of "evil"</div>
-                        </div>
-                    </a>
-                </article>
-
-                <!-- Constantine -->
-                <article class="movie-card">
-                    <a href="religion/constantine.html">
-                        <div class="movie-poster">
-                            <img src="../img/religion/Constantine.jpg" alt="Constantine" loading="lazy">
-                            <div class="rating-badge rating-5">5</div>
-                        </div>
-                        <div class="movie-info">
-                            <h3 class="movie-title">Constantine</h3>
-                            <div class="movie-meta">
-                                <span class="movie-year">2005</span>
-                                <span class="movie-director">Lawrence</span>
-                            </div>
-                            <div class="movie-lens lens-sartre">Sartre: Cynical Exorcist as Bad Faith in Cosmic Bureaucracy</div>
-                            <div class="atheist-note">Existential atheism: Heaven/Hell as bureaucratic systems, salvation as contractual obligation</div>
-                        </div>
-                    </a>
-                </article>
-
-                <!-- End of Days -->
-                <article class="movie-card">
-                    <a href="religion/end-of-days.html">
-                        <div class="movie-poster">
-                            <img src="../img/religion/End of Days.jpg" alt="End of Days" loading="lazy">
-                            <div class="rating-badge rating-1">1</div>
-                        </div>
-                        <div class="movie-info">
-                            <h3 class="movie-title">End of Days</h3>
-                            <div class="movie-meta">
-                                <span class="movie-year">1999</span>
-                                <span class="movie-director">Hyams</span>
-                            </div>
-                            <div class="movie-lens lens-baudrillard">Baudrillard: Millennial Apocalypse as Hyperreal Spectacle</div>
-                            <div class="atheist-note">Anti-theist critique: Reduces eschatology to action movie clichés</div>
-                        </div>
-                    </a>
-                </article>
-
-                <!-- The Devil Conspiracy -->
-                <article class="movie-card">
-                    <a href="religion/the-devil-conspiracy.html">
-                        <div class="movie-poster">
-                            <img src="../img/religion/The Devil Conspiracy.jpg" alt="The Devil Conspiracy" loading="lazy">
-                            <div class="rating-badge rating-3">3</div>
-                        </div>
-                        <div class="movie-info">
-                            <h3 class="movie-title">The Devil Conspiracy</h3>
-                            <div class="movie-meta">
-                                <span class="movie-year">2023</span>
-                                <span class="movie-director">Stahelski</span>
-                            </div>
-                            <div class="movie-lens lens-baudrillard">Baudrillard: Cloned Messiah as Simulacrum of Salvation</div>
-                            <div class="atheist-note">Materialist premise: Biotechnology as new site for religious anxiety and conspiracy thinking</div>
-                        </div>
-                    </a>
-                </article>
-            </div>
-        </section>
-
-        <!-- Section 5: Mythology as Cultural Archetype -->
-        <section class="all-movies">
-            <div class="all-movies-header">
-                <h2>Mythology as Cultural Archetype</h2>
-                <p class="subtitle">Campbell's monomyth, Jung's archetypes, Said's Orientalism in mythological narratives.</p>
-            </div>
-
-            <div class="movie-grid">
-                <!-- Clash of the Titans -->
-                <article class="movie-card">
-                    <a href="religion/clash-of-the-titans.html">
-                        <div class="movie-poster">
-                            <img src="../img/religion/Clash of the Titans.jpg" alt="Clash of the Titans" loading="lazy">
-                            <div class="rating-badge rating-3">3</div>
-                        </div>
-                        <div class="movie-info">
-                            <h3 class="movie-title">Clash of the Titans</h3>
-                            <div class="movie-meta">
-                                <span class="movie-year">2010</span>
-                                <span class="movie-director">Leterrier</span>
-                            </div>
-                            <div class="movie-lens lens-campbell">Campbell: Hero's Journey as Corporate Spectacle</div>
-                            <div class="atheist-note">Secular analysis: Treats mythology as narrative template stripped of religious significance</div>
-                        </div>
-                    </a>
-                </article>
-
-                <!-- Gods of Egypt -->
-                <article class="movie-card">
-                    <a href="religion/gods-of-egypt.html">
-                        <div class="movie-poster">
-                            <img src="../img/religion/Gods Of Egypt.jpg" alt="Gods of Egypt" loading="lazy">
-                            <div class="rating-badge rating-2">2</div>
-                        </div>
-                        <div class="movie-info">
-                            <h3 class="movie-title">Gods of Egypt</h3>
-                            <div class="movie-meta">
-                                <span class="movie-year">2016</span>
-                                <span class="movie-director">Proyas</span>
-                            </div>
-                            <div class="movie-lens lens-said">Said: Orientalist Appropriation of Mythological Pantheon</div>
-                            <div class="atheist-note">Postcolonial critique: Whitewashed appropriation of non-Western religious traditions</div>
-                        </div>
-                    </a>
-                </article>
-
-                <!-- The Legend of Hercules -->
-                <article class="movie-card">
-                    <a href="religion/the-legend-of-hercules.html">
-                        <div class="movie-poster">
-                            <img src="../img/religion/The Legend of Hercules.jpg" alt="The Legend of Hercules" loading="lazy">
-                            <div class="rating-badge rating-1">1</div>
-                        </div>
-                        <div class="movie-info">
-                            <h3 class="movie-title">The Legend of Hercules</h3>
-                            <div class="movie-meta">
-                                <span class="movie-year">2014</span>
-                                <span class="movie-director">Renny Harlin</span>
-                            </div>
-                            <div class="movie-lens lens-adorno">Adorno: Mythology as Mass Culture Product</div>
-                            <div class="atheist-note">Materialist critique: Reduces myth to empty spectacle without cultural resonance</div>
-                        </div>
-                    </a>
-                </article>
-            </div>
-        </section>
-
-        <!-- Section 6: Faith Claims & Scientific Skepticism -->
-        <section class="all-movies">
-            <div class="all-movies-header">
-                <h2>Faith Claims & Scientific Skepticism</h2>
-                <p class="subtitle">Dawkins' scientific rationalism, Harris' neuroscience of belief, medical materialism.</p>
+                <h2>Scientific Skepticism & Medical Materialism</h2>
+                <p class="subtitle">Dawkins' scientific rationalism, Harris' neuroscience of belief, medical explanations</p>
             </div>
 
             <div class="movie-grid">
@@ -540,7 +660,9 @@
                                 <span class="movie-director">Wallace</span>
                             </div>
                             <div class="movie-lens lens-harris">Harris: Near-Death Experience as Neurological Phenomenon</div>
-                            <div class="atheist-note">Scientific critique: Interprets "heavenly visions" as brain chemistry during medical trauma</div>
+                            <div class="atheist-analysis">
+                                <span class="label">Scientific Analysis:</span> Attributes "heavenly visions" to brain chemistry during medical trauma. Examines family's psychological need to interpret medical event as divine intervention.
+                            </div>
                         </div>
                     </a>
                 </article>
@@ -558,8 +680,10 @@
                                 <span class="movie-year">2016</span>
                                 <span class="movie-director">Riggen</span>
                             </div>
-                            <div class="movie-lens lens-dawkins">Dawkins: Medical Recovery Attributed to Divine Intervention</div>
-                            <div class="atheist-note">Materialist analysis: Attributes statistical medical outcomes to supernatural causation</div>
+                            <div class="movie-lens lens-dawkins">Dawkins: Medical Recovery as Divine Intervention</div>
+                            <div class="atheist-analysis">
+                                <span class="label">Materialist Critique:</span> Attributes statistical medical outcomes to supernatural causation. Examines psychological comfort derived from miraculous narratives during health crises.
+                            </div>
                         </div>
                     </a>
                 </article>
@@ -578,21 +702,13 @@
                                 <span class="movie-director">Gunn</span>
                             </div>
                             <div class="movie-lens lens-dawkins">Dawkins: Investigative Journalism as Pseudo-Scientific Apologetics</div>
-                            <div class="atheist-note">Scientific critique: Misapplies journalistic methods to theological claims</div>
+                            <div class="atheist-analysis">
+                                <span class="label">Methodological Critique:</span> Misapplies journalistic methods to theological claims. Examines confirmation bias in "investigating" pre-determined religious conclusions.
+                            </div>
                         </div>
                     </a>
                 </article>
-            </div>
-        </section>
 
-        <!-- Section 7: Atheist Existentialism & Humanist Ethics -->
-        <section class="all-movies">
-            <div class="all-movies-header">
-                <h2>Atheist Existentialism & Humanist Ethics</h2>
-                <p class="subtitle">Sartre's "condemned to be free," Nietzsche's will to power, humanist ethics without God.</p>
-            </div>
-
-            <div class="movie-grid">
                 <!-- An Interview with God -->
                 <article class="movie-card">
                     <a href="religion/an-interview-with-god.html">
@@ -607,7 +723,9 @@
                                 <span class="movie-director">St. Clair</span>
                             </div>
                             <div class="movie-lens lens-sartre">Sartre: Divine Interview as Projection of Human Anxiety</div>
-                            <div class="atheist-note">Existential analysis: "God" as psychological projection of journalist's own doubts</div>
+                            <div class="atheist-analysis">
+                                <span class="label">Existential Analysis:</span> "God" as psychological projection of journalist's own doubts and anxieties. Examines human need for answers to existential questions.
+                            </div>
                         </div>
                     </a>
                 </article>
@@ -625,8 +743,62 @@
                                 <span class="movie-year">2022</span>
                                 <span class="movie-director">Rosalind Ross</span>
                             </div>
-                            <div class="movie-lens lens-nietzsche">Nietzsche: Affliction as Will to Power Through Religious Vocation</div>
-                            <div class="atheist-note">Humanist reading: Interprets priesthood as way to transform suffering into meaning</div>
+                            <div class="movie-lens lens-nietzsche">Nietzsche: Affliction as Will to Power Through Vocation</div>
+                            <div class="atheist-analysis">
+                                <span class="label">Humanist Reading:</span> Interprets priesthood as way to transform suffering into meaning. Examines religious conversion as response to mortality and physical decline.
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Section 4: Demonic Politics & Apocalyptic Anxiety -->
+        <section class="all-movies">
+            <div class="all-movies-header">
+                <h2>Demonic Politics & Apocalyptic Anxiety</h2>
+                <p class="subtitle">Schmitt's political theology, Mbembe's necropolitics, Baudrillard's simulation</p>
+            </div>
+
+            <div class="movie-grid">
+                <!-- The Devil's Advocate -->
+                <article class="movie-card">
+                    <a href="religion/the-devils-advocate.html">
+                        <div class="movie-poster">
+                            <img src="../img/religion/The Devil_s Advocate.jpg" alt="The Devil's Advocate" loading="lazy">
+                            <div class="rating-badge rating-7">7</div>
+                        </div>
+                        <div class="movie-info">
+                            <h3 class="movie-title">The Devil's Advocate</h3>
+                            <div class="movie-meta">
+                                <span class="movie-year">1997</span>
+                                <span class="movie-director">Hackford</span>
+                            </div>
+                            <div class="movie-lens lens-schmitt">Schmitt: Law Firm as Modern Satanic Temptation of Power</div>
+                            <div class="atheist-analysis">
+                                <span class="label">Materialist Allegory:</span> Corporate greed as contemporary manifestation of "evil." Examines ambition and moral compromise in professional context.
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Constantine -->
+                <article class="movie-card">
+                    <a href="religion/constantine.html">
+                        <div class="movie-poster">
+                            <img src="../img/religion/Constantine.jpg" alt="Constantine" loading="lazy">
+                            <div class="rating-badge rating-5">5</div>
+                        </div>
+                        <div class="movie-info">
+                            <h3 class="movie-title">Constantine</h3>
+                            <div class="movie-meta">
+                                <span class="movie-year">2005</span>
+                                <span class="movie-director">Lawrence</span>
+                            </div>
+                            <div class="movie-lens lens-sartre">Sartre: Cynical Exorcist as Bad Faith in Cosmic Bureaucracy</div>
+                            <div class="atheist-analysis">
+                                <span class="label">Existential Atheism:</span> Heaven/Hell as bureaucratic systems, salvation as contractual obligation. Noir approach to supernatural genre.
+                            </div>
                         </div>
                     </a>
                 </article>
@@ -644,8 +816,240 @@
                                 <span class="movie-year">2010</span>
                                 <span class="movie-director">Hughes Brothers</span>
                             </div>
-                            <div class="movie-lens lens-nietzsche">Nietzsche: Sacred Text as Will to Power in Post-Apocalyptic World</div>
-                            <div class="atheist-note">Materialist premise: Bible as cultural artifact with power to shape civilization</div>
+                            <div class="movie-lens lens-derrida">Derrida: Sacred Text as Trace in Post-Apocalyptic Archive</div>
+                            <div class="atheist-analysis">
+                                <span class="label">Materialist Premise:</span> Bible as cultural artifact with power to shape civilization. Examines text as source of social order in post-apocalyptic world.
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- The Devil Conspiracy -->
+                <article class="movie-card">
+                    <a href="religion/the-devil-conspiracy.html">
+                        <div class="movie-poster">
+                            <img src="../img/religion/The Devil Conspiracy.jpg" alt="The Devil Conspiracy" loading="lazy">
+                            <div class="rating-badge rating-3">3</div>
+                        </div>
+                        <div class="movie-info">
+                            <h3 class="movie-title">The Devil Conspiracy</h3>
+                            <div class="movie-meta">
+                                <span class="movie-year">2023</span>
+                                <span class="movie-director">Stahelski</span>
+                            </div>
+                            <div class="movie-lens lens-baudrillard">Baudrillard: Cloned Messiah as Simulacrum of Salvation</div>
+                            <div class="atheist-analysis">
+                                <span class="label">Materialist Premise:</span> Biotechnology as new site for religious anxiety and conspiracy thinking. B-movie approach to theological science fiction.
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Legion -->
+                <article class="movie-card">
+                    <a href="religion/legion.html">
+                        <div class="movie-poster">
+                            <img src="../img/religion/Legion.jpeg" alt="Legion" loading="lazy">
+                            <div class="rating-badge rating-2">2</div>
+                        </div>
+                        <div class="movie-info">
+                            <h3 class="movie-title">Legion</h3>
+                            <div class="movie-meta">
+                                <span class="movie-year">2010</span>
+                                <span class="movie-director">Stewart</span>
+                            </div>
+                            <div class="movie-lens lens-mbembe">Mbembe: Diner as Necropolitical Space of Divine War</div>
+                            <div class="atheist-analysis">
+                                <span class="label">Theological Critique:</span> Reduces eschatology to B-movie horror tropes. Messy execution of apocalyptic premise with limited philosophical engagement.
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- End of Days -->
+                <article class="movie-card">
+                    <a href="religion/end-of-days.html">
+                        <div class="movie-poster">
+                            <img src="../img/religion/End of Days.jpg" alt="End of Days" loading="lazy">
+                            <div class="rating-badge rating-1">1</div>
+                        </div>
+                        <div class="movie-info">
+                            <h3 class="movie-title">End of Days</h3>
+                            <div class="movie-meta">
+                                <span class="movie-year">1999</span>
+                                <span class="movie-director">Hyams</span>
+                            </div>
+                            <div class="movie-lens lens-schmitt">Schmitt: Millennial Apocalypse as State of Exception</div>
+                            <div class="atheist-analysis">
+                                <span class="label">Anti-theist Critique:</span> Reduces eschatology to action movie clichés. Theological framework as excuse for conventional thriller plot.
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- I, Frankenstein -->
+                <article class="movie-card">
+                    <a href="religion/i-frankenstein.html">
+                        <div class="movie-poster">
+                            <img src="../img/religion/I, Frankenstein.jpg" alt="I, Frankenstein" loading="lazy">
+                            <div class="rating-badge rating-1">1</div>
+                        </div>
+                        <div class="movie-info">
+                            <h3 class="movie-title">I, Frankenstein</h3>
+                            <div class="movie-meta">
+                                <span class="movie-year">2014</span>
+                                <span class="movie-director">Beattie</span>
+                            </div>
+                            <div class="movie-lens lens-haraway">Haraway: Monster as Cyborg in Angel-Demon War</div>
+                            <div class="atheist-analysis">
+                                <span class="label">Genre Critique:</span> Gothic monster narrative awkwardly inserted into theological conflict. Lacks coherence in either horror or theological dimensions.
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Section 5: Genealogy of Sacred Texts -->
+        <section class="all-movies">
+            <div class="all-movies-header">
+                <h2>Genealogy of Sacred Texts</h2>
+                <p class="subtitle">Nietzsche's "God is dead," Derrida's deconstruction, Foucault's archaeology</p>
+            </div>
+
+            <div class="movie-grid">
+                <!-- Noah -->
+                <article class="movie-card">
+                    <a href="religion/noah.html">
+                        <div class="movie-poster">
+                            <img src="../img/religion/Noah.jpg" alt="Noah" loading="lazy">
+                            <div class="rating-badge rating-8">8</div>
+                        </div>
+                        <div class="movie-info">
+                            <h3 class="movie-title">Noah</h3>
+                            <div class="movie-meta">
+                                <span class="movie-year">2014</span>
+                                <span class="movie-director">Aronofsky</span>
+                            </div>
+                            <div class="movie-lens lens-nietzsche">Nietzsche: Environmental Ethics as Slave Morality Critique</div>
+                            <div class="atheist-analysis">
+                                <span class="label">Atheist Analysis:</span> Treats divine command as psychological crisis rather than theological truth. Environmental allegory through biblical narrative.
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Exodus: Gods and Kings -->
+                <article class="movie-card">
+                    <a href="religion/exodus-gods-and-kings.html">
+                        <div class="movie-poster">
+                            <img src="../img/religion/Exodus Gods and Kings.jpg" alt="Exodus: Gods and Kings" loading="lazy">
+                            <div class="rating-badge rating-3">3</div>
+                        </div>
+                        <div class="movie-info">
+                            <h3 class="movie-title">Exodus: Gods and Kings</h3>
+                            <div class="movie-meta">
+                                <span class="movie-year">2014</span>
+                                <span class="movie-director">Scott</span>
+                            </div>
+                            <div class="movie-lens lens-marx">Marx: Liberation Theology as Imperial Spectacle</div>
+                            <div class="atheist-analysis">
+                                <span class="label">Materialist Critique:</span> Reduces divine intervention to natural disasters and political manipulation. Spectacle overwhelms narrative substance.
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Paul, Apostle of Christ -->
+                <article class="movie-card">
+                    <a href="religion/paul-apostle-of-christ.html">
+                        <div class="movie-poster">
+                            <img src="../img/religion/Paul Apostle of Christ.jpg" alt="Paul, Apostle of Christ" loading="lazy">
+                            <div class="rating-badge rating-5">5</div>
+                        </div>
+                        <div class="movie-info">
+                            <h3 class="movie-title">Paul, Apostle of Christ</h3>
+                            <div class="movie-meta">
+                                <span class="movie-year">2018</span>
+                                <span class="movie-director">Andrew Hyatt</span>
+                            </div>
+                            <div class="movie-lens lens-foucault">Foucault: Prison Writing as Technology of Religious Self</div>
+                            <div class="atheist-analysis">
+                                <span class="label">Atheist Reading:</span> Interprets religious experience as psychological coping mechanism in confinement. Devotional approach limits critical perspective.
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Section 6: Mythology as Cultural Archetype -->
+        <section class="all-movies">
+            <div class="all-movies-header">
+                <h2>Mythology as Cultural Archetype</h2>
+                <p class="subtitle">Campbell's monomyth, Jung's archetypes, Said's Orientalism</p>
+            </div>
+
+            <div class="movie-grid">
+                <!-- Clash of the Titans -->
+                <article class="movie-card">
+                    <a href="religion/clash-of-the-titans.html">
+                        <div class="movie-poster">
+                            <img src="../img/religion/Clash of the Titans.jpg" alt="Clash of the Titans" loading="lazy">
+                            <div class="rating-badge rating-3">3</div>
+                        </div>
+                        <div class="movie-info">
+                            <h3 class="movie-title">Clash of the Titans</h3>
+                            <div class="movie-meta">
+                                <span class="movie-year">2010</span>
+                                <span class="movie-director">Leterrier</span>
+                            </div>
+                            <div class="movie-lens lens-campbell">Campbell: Hero's Journey as Corporate Spectacle</div>
+                            <div class="atheist-analysis">
+                                <span class="label">Secular Analysis:</span> Treats mythology as narrative template stripped of religious significance. CGI spectacle replaces cultural resonance.
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Gods of Egypt -->
+                <article class="movie-card">
+                    <a href="religion/gods-of-egypt.html">
+                        <div class="movie-poster">
+                            <img src="../img/religion/Gods Of Egypt.jpg" alt="Gods of Egypt" loading="lazy">
+                            <div class="rating-badge rating-2">2</div>
+                        </div>
+                        <div class="movie-info">
+                            <h3 class="movie-title">Gods of Egypt</h3>
+                            <div class="movie-meta">
+                                <span class="movie-year">2016</span>
+                                <span class="movie-director">Proyas</span>
+                            </div>
+                            <div class="movie-lens lens-said">Said: Orientalist Appropriation of Mythological Pantheon</div>
+                            <div class="atheist-analysis">
+                                <span class="label">Postcolonial Critique:</span> Whitewashed appropriation of non-Western religious traditions. Cultural insensitivity combined with narrative incompetence.
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- The Legend of Hercules -->
+                <article class="movie-card">
+                    <a href="religion/the-legend-of-hercules.html">
+                        <div class="movie-poster">
+                            <img src="../img/religion/The Legend of Hercules.jpg" alt="The Legend of Hercules" loading="lazy">
+                            <div class="rating-badge rating-1">1</div>
+                        </div>
+                        <div class="movie-info">
+                            <h3 class="movie-title">The Legend of Hercules</h3>
+                            <div class="movie-meta">
+                                <span class="movie-year">2014</span>
+                                <span class="movie-director">Renny Harlin</span>
+                            </div>
+                            <div class="movie-lens lens-adorno">Adorno: Mythology as Mass Culture Product</div>
+                            <div class="atheist-analysis">
+                                <span class="label">Materialist Critique:</span> Reduces myth to empty spectacle without cultural resonance. Formulaic hero narrative with no engagement with mythological meaning.
+                            </div>
                         </div>
                     </a>
                 </article>
@@ -663,4 +1067,4 @@
     
     <script src="../js/script.js"></script>
 </body>
-</html>
+    </html>
