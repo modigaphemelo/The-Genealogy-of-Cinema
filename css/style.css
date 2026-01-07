@@ -31,7 +31,10 @@
     --accent-sade: #F44336;           /* Red for Sade */
     --accent-williams: #2196F3;       /* Blue for Williams */
     --accent-jodorowsky: #FF9800;     /* Orange for Jodorowsky */
-    
+   --accent-hartman: #00BCD4;
+   --accent-brass: #E91E63;
+   --accent-davis: #F44336;
+ 
     /* Text colors */
     --text-primary: #f0f0f0;
     --text-secondary: #b0b0b0;
@@ -761,7 +764,10 @@ html, body {
 .lens-nabokov { background: rgba(103, 58, 183, 0.1); border-color: rgba(103, 58, 183, 0.3); color: #673AB7; }
 .lens-bersani { background: rgba(0, 188, 212, 0.1); border-color: rgba(0, 188, 212, 0.3); color: var(--accent-baudrillard); }
 .lens-sontag { background: rgba(96, 125, 139, 0.1); border-color: rgba(96, 125, 139, 0.3); color: var(--accent-adorno); }
-
+.lens-hartman { background: rgba(0, 188, 212, 0.1); border-color: rgba(0, 188, 212, 0.3); color: var(--accent-hartman); }
+.lens-brass { background: rgba(233, 30, 99, 0.1); border-color: rgba(233, 30, 99, 0.3); color: var(--accent-brass); }
+.lens-davis { background: rgba(244, 67, 54, 0.1); border-color: rgba(244, 67, 54, 0.3); color: var(--accent-davis); }
+   
 
 /* ====== CRITICS PAGE ====== */
 .critics-header {
